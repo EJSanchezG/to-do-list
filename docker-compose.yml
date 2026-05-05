@@ -1,0 +1,25 @@
+services:
+  db:
+    image: postgres:17.9
+    container_name: todo-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: todo_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+
+  app-todo:
+    build: .
+    container_name: todo-app-java
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      # IMPORTANTE: Aquí cambiamos 'localhost' por 'db' (el nombre del servicio)
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/todo_db
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: admin

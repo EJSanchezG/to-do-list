@@ -1,0 +1,21 @@
+info:
+  name: guardarTareas
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/api/tareas
+  body:
+    type: json
+    data: |-
+      {
+          "titulo": "Analizar el flujo de api-huella"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

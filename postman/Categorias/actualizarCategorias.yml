@@ -1,0 +1,21 @@
+info:
+  name: actualizarCategorias
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: http://localhost:8080/api/categorias/2
+  body:
+    type: json
+    data: |-
+      {
+          "nombre": "Aprendizaje"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
