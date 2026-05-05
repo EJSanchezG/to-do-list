@@ -1,6 +1,6 @@
 package com.practicandospring.todolist.service.impl;
 
-import com.practicandospring.todolist.model.CategoriaEntity;
+import com.practicandospring.todolist.entity.CategoriaEntity;
 import com.practicandospring.todolist.repository.ICategoriaRepository;
 import com.practicandospring.todolist.repository.ITareaRepository;
 import com.practicandospring.todolist.service.ICategoriaService;

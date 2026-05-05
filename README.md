@@ -37,7 +37,7 @@ Controller  →  Service (interfaz + impl)  →  Repository  →  Base de datos
 | Controller | `controller/`                | Recibe peticiones HTTP y devuelve respuestas JSON    |
 | Service    | `service/` + `service/impl/` | Lógica de negocio con interfaces desacopladas        |
 | Repository | `repository/`                | Acceso a datos mediante Spring Data JPA              |
-| Model      | `model/`                     | Entidades JPA mapeadas a tablas PostgreSQL           |
+| Entity     | `entity/`                    | Entidades JPA mapeadas a tablas PostgreSQL           |
 | DTO        | `dto/`                       | Objetos de transferencia de datos (Java Records)     |
 | Mapper     | `mapper/`                    | Conversión Entity ↔ DTO con MapStruct               |
 | Exception  | `exception/`                 | Manejo global de errores con `@RestControllerAdvice` |
@@ -255,7 +255,7 @@ src/main/java/com/practicandospring/todolist/
 │   └── GlobalExceptionHandler.java # @RestControllerAdvice global
 ├── mapper/
 │   └── TareaMapper.java            # Interfaz MapStruct (implementación generada)
-├── model/
+├── entity/
 │   ├── TareaEntity.java
 │   └── CategoriaEntity.java
 ├── repository/

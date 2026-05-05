@@ -1,6 +1,6 @@
 package com.practicandospring.todolist.repository;
 
-import com.practicandospring.todolist.model.TareaEntity;
+import com.practicandospring.todolist.entity.TareaEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

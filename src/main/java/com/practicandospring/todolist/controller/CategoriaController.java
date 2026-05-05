@@ -1,6 +1,6 @@
 package com.practicandospring.todolist.controller;
 
-import com.practicandospring.todolist.model.CategoriaEntity;
+import com.practicandospring.todolist.entity.CategoriaEntity;
 import com.practicandospring.todolist.service.ICategoriaService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

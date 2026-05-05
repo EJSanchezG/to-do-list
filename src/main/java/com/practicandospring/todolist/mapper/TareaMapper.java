@@ -1,7 +1,7 @@
 package com.practicandospring.todolist.mapper;
 
 import com.practicandospring.todolist.dto.TareaDTO;
-import com.practicandospring.todolist.model.TareaEntity;
+import com.practicandospring.todolist.entity.TareaEntity;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

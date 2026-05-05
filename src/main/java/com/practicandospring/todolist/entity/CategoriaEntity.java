@@ -1,4 +1,4 @@
-package com.practicandospring.todolist.model;
+package com.practicandospring.todolist.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
